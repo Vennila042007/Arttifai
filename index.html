@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuickEats - Food Delivery</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>QuickEats</h1>
+    <input type="text" placeholder="Search food or restaurant..." />
+  </header>
+
+  <main>
+    <section class="categories">
+      <h2>Categories</h2>
+      <div class="category-list">
+        <button>Pizza</button>
+        <button>Burgers</button>
+        <button>Indian</button>
+        <button>Desserts</button>
+        <button>Chinese</button>
+      </div>
+    </section>
+
+    <section class="restaurants">
+      <h2>Popular Restaurants</h2>
+      
+      <div class="restaurant-card">
+        <img src="https://via.placeholder.com/300x180" alt="Spicy Hub">
+        <div class="card-content">
+          <h3>Spicy Hub</h3>
+          <p>Indian Cuisine | ⭐ 4.5</p>
+          <button onclick="addToCart('Spicy Hub')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="restaurant-card">
+        <img src="https://www.bing.com/images/search?view=detailV2&ccid=VQE2EOdp&id=D01610972D083CBAD270FDE43C25CC7458DFFD65&thid=OIP.VQE2EOdpbg8UsAB4xoozzAHaHa&mediaurl=https%3a%2f%2fstatic.vecteezy.com%2fsystem%2fresources%2fpreviews%2f029%2f160%2f372%2flarge_2x%2ftasty-top-view-pizza-italian-traditional-round-pizza-on-white-background-ai-generative-free-photo.jpg&exph=1960&expw=1960&q=pizza+image&simid=608009148002618042&FORM=IRPRST&ck=9C5165C60CDBD0F173FEFAE6DB18811C&selectedIndex=0&itb=0&idpp=overlayview&mode=overlay" alt="Pizza Palace">
+        <div class="card-content">
+          <h3>Pizza Palace</h3>
+          <p>Italian | ⭐ 4.7</p>
+          <button onclick="addToCart('Pizza Palace')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="restaurant-card">
+        <img src="https://via.placeholder.com/300x180" alt="Burger Bay">
+        <div class="card-content">
+          <h3>Burger Bay</h3>
+          <p>Fast Food | ⭐ 4.4</p>
+          <button onclick="addToCart('Burger Bay')">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart">
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+    </section>
+
+    <section class="tracking">
+      <h2>Live Order Tracking</h2>
+      <div class="map-box">
+        <p>🛵 Your food is on the way!</p>
+        <img src="https://via.placeholder.com/350x150?text=Map+Tracking+Placeholder" alt="Map">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 QuickEats. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
